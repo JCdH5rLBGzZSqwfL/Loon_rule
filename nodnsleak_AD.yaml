@@ -38,7 +38,7 @@ Amy = NameRegex, FilterKey = ".*"
 Amy过滤广告白名单 = NameRegex, FilterKey = "^(?!.*广告)"
 10000 = NameRegex, FilterKey = "^(?!.*?广告).*US"
 10010 = NameRegex, FilterKey = "^(?!.*VN)"
-Amy广告白名单 = NameRegex, FilterKey = "(^.*广告)"
+Amy广告白名单 = NameRegex, FilterKey = "^.*(广告)"
 
 [Proxy Group]
 # 手动策略组
