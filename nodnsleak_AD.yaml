@@ -38,6 +38,7 @@ Amy = NameRegex, FilterKey = ".*"
 Amy过滤广告白名单 = NameRegex, FilterKey = "^(?!.*广告)"
 10000 = NameRegex, FilterKey = "^(?!.*?广告).*US"
 10010 = NameRegex, FilterKey = "^(?!.*VN)"
+Amy广告白名单 = NameRegex, FilterKey = ^.*广告"
 
 [Proxy Group]
 # 手动策略组
@@ -69,7 +70,7 @@ Infini = select,Amy过滤广告白名单,img-url = creditcard.circle.fill
 
 Bybit = select,Amy过滤广告白名单,img-url = creditcard.circle.fill
 
-广告 = select,REJECT-DROP,DIRECT,img-url = https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/Adblock.png
+广告 = select,REJECT-DROP,DIRECT,Amy广告白名单,img-url = https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/Adblock.png
 
 # --------------------------------
 # 兜底策略后备
