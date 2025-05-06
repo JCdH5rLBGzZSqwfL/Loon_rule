@@ -69,6 +69,8 @@ Infini = select,Amy过滤广告白名单,img-url = creditcard.circle.fill
 
 Bybit = select,Amy过滤广告白名单,img-url = creditcard.circle.fill
 
+广告 = select,REJECT-DROP,DIRECT,img-url = https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/Adblock.png
+
 # --------------------------------
 # 兜底策略后备
 后备策略 = fallback,Amy,interval = 300,max-timeout = 2000,img-url = https://cdn.jsdelivr.net/gh/shindgewongxj/WHATSINStash@main/icon/fallback.png
@@ -98,7 +100,7 @@ https://cdn.jsdelivr.net/gh/JCdH5rLBGzZSqwfL/clash_rule@main/list/Infini.list, p
 
 https://cdn.jsdelivr.net/gh/JCdH5rLBGzZSqwfL/clash_rule@main/list/Bybit.list, policy=Bybit, tag=Bybit, enabled=true
 
-https://gcore.jsdelivr.net/gh/217heidai/adblockfilters@main/rules/adblockclash.list, policy=REJECT-DROP, tag=广告, enabled=true
+https://gcore.jsdelivr.net/gh/217heidai/adblockfilters@main/rules/adblockclash.list, policy=广告, tag=广告, enabled=true
 
 https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Loon/Proxy/Proxy.list, policy=手动选择, tag=代理, enabled=true
 
