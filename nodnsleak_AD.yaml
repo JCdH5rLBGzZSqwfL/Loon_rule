@@ -41,7 +41,7 @@ Amy过滤广告白名单 = NameRegex, FilterKey = "^(?!.*广告)"
 
 [Proxy Group]
 # 手动策略组
-手动选择 = select,自动选择,电信,联通,移动,Amy,img-url = https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/Amy.png
+手动选择 = select,自动选择,DIRECT,电信,联通,移动,Amy,img-url = https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/Amy.png
 
 自动选择 = url-test,Amy过滤广告白名单,interval = 600,tolerance = 50,img-url = https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/Global.png
 
