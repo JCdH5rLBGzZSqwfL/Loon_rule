@@ -19,9 +19,9 @@ disconnect-on-policy-change = false
 switch-node-after-failure-times = 3
 internet-test-url = http://connectivitycheck.platform.hicloud.com/generate_204
 proxy-test-url = http://www.gstatic.com/generate_204
-resource-parser = https://raw.githubusercontent.com/sub-store-org/Sub-Store/release/sub-store-parser.loon.min.js
+resource-parser = https://cdn.jsdelivr.net/gh/sub-store-org/Sub-Store@release/sub-store-parser.loon.min.js
 geoip-url = https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/Country-only-cn-private.mmdb
-ipasn-url = https://geodata.kelee.one/GeoLite2-ASN-P3TERX.mmdb
+ipasn-url = https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/GeoLite2-ASN.mmdb
 skip-proxy = 192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,localhost,*.local,e.crashlynatics.com
 bypass-tun = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,192.0.0.0/24,192.0.2.0/24,192.88.99.0/24,192.168.0.0/16,198.51.100.0/24,203.0.113.0/24,224.0.0.0/4,255.255.255.255/32
 
@@ -41,27 +41,27 @@ Amy过滤广告白名单 = NameRegex, FilterKey = "^(?!.*广告)"
 
 [Proxy Group]
 # 手动策略组
-手动选择 = select,自动选择,电信,联通,移动,Amy,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Amy.png
+手动选择 = select,自动选择,电信,联通,移动,Amy,img-url = https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/Amy.png
 
-自动选择 = url-test,Amy过滤广告白名单,interval = 600,tolerance = 50,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
+自动选择 = url-test,Amy过滤广告白名单,interval = 600,tolerance = 50,img-url = https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/Global.png
 
-电信 = url-test,10000,interval = 600,tolerance = 50,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/10000.png
+电信 = url-test,10000,interval = 600,tolerance = 50,img-url = https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/10000.png
 
-联通 = url-test,10010,interval = 600,tolerance = 50,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/10010.png
+联通 = url-test,10010,interval = 600,tolerance = 50,img-url = https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/10010.png
 
-移动 = url-test,Amy过滤广告白名单,interval = 600,tolerance = 50,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/10086.png
+移动 = url-test,Amy过滤广告白名单,interval = 600,tolerance = 50,img-url = https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/10086.png
 
-Telegram = select,手动选择,自动选择,Amy过滤广告白名单,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png
+Telegram = select,手动选择,自动选择,Amy过滤广告白名单,img-url = https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/Telegram.png
 
-AI平台 = select,手动选择,自动选择,Amy过滤广告白名单,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png
+AI平台 = select,手动选择,自动选择,Amy过滤广告白名单,img-url = https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/OpenAI.png
 
-油管视频 = select,手动选择,自动选择,Amy过滤广告白名单,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/YouTube.png
+油管视频 = select,手动选择,自动选择,Amy过滤广告白名单,img-url = https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/YouTube.png
 
-奈飞视频 = select,手动选择,自动选择,Amy过滤广告白名单,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Netflix.png
+奈飞视频 = select,手动选择,自动选择,Amy过滤广告白名单,img-url = https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/Netflix.png
 
-苹果服务 = select,手动选择,自动选择,DIRECT,Amy过滤广告白名单,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Apple.png
+苹果服务 = select,手动选择,自动选择,DIRECT,Amy过滤广告白名单,img-url = https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/Apple.png
 
-微软服务 = select,手动选择,自动选择,DIRECT,Amy过滤广告白名单,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Microsoft.png
+微软服务 = select,手动选择,自动选择,DIRECT,Amy过滤广告白名单,img-url = https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/Microsoft.png
 
 RedotPay = select,Amy过滤广告白名单,img-url = creditcard.circle.fill
 
@@ -71,7 +71,7 @@ Bybit = select,Amy过滤广告白名单,img-url = creditcard.circle.fill
 
 # --------------------------------
 # 兜底策略后备
-后备策略 = fallback,Amy,interval = 300,max-timeout = 2000,img-url = https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/fallback.png
+后备策略 = fallback,Amy,interval = 300,max-timeout = 2000,img-url = https://cdn.jsdelivr.net/gh/shindgewongxj/WHATSINStash@main/icon/fallback.png
 
 [Rule]
 GEOIP,cn,DIRECT,no-resolve
@@ -80,7 +80,7 @@ FINAL,手动选择
 [Remote Rule]
 https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Loon/Telegram/Telegram.list, policy=Telegram, tag=Telegram, enabled=true
 
-https://kelee.one/Tool/Loon/Rule/AI.list, policy=AI平台, tag=AI, enabled=true
+https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/AI.list, policy=AI平台, tag=AI, enabled=true
 
 https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Loon/YouTube/YouTube.list, policy=油管视频, tag=YouTube, enabled=true
 
@@ -88,15 +88,15 @@ https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Loon/Netfli
 
 https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Loon/Apple/Apple.list, policy=苹果服务, tag=苹果服务, enabled=true
 
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Loon/Apple/Apple_Domain.list, policy=苹果服务, tag=苹果服务-域名, enabled=true
+https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Loon/Apple/Apple_Domain.list, policy=苹果服务, tag=苹果服务-域名, enabled=true
 
 https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Loon/Microsoft/Microsoft.list, policy=微软服务, tag=微软服务, enabled=true
 
-https://raw.githubusercontent.com/JCdH5rLBGzZSqwfL/clash_rule/refs/heads/main/list/redotpay.list, policy=RedotPay, tag=RedotPay, enabled=true
+https://cdn.jsdelivr.net/gh/JCdH5rLBGzZSqwfL/clash_rule@main/list/redotpay.list, policy=RedotPay, tag=RedotPay, enabled=true
 
-https://raw.githubusercontent.com/JCdH5rLBGzZSqwfL/clash_rule/refs/heads/main/list/Infini.list, policy=Infini, tag=Infini, enabled=true
+https://cdn.jsdelivr.net/gh/JCdH5rLBGzZSqwfL/clash_rule@main/list/Infini.list, policy=Infini, tag=Infini, enabled=true
 
-https://raw.githubusercontent.com/JCdH5rLBGzZSqwfL/clash_rule/refs/heads/main/list/Bybit.list, policy=Bybit, tag=Bybit, enabled=true
+https://cdn.jsdelivr.net/gh/JCdH5rLBGzZSqwfL/clash_rule@main/list/Bybit.list, policy=Bybit, tag=Bybit, enabled=true
 
 https://gcore.jsdelivr.net/gh/217heidai/adblockfilters@main/rules/adblockclash.list, policy=REJECT-DROP, tag=广告, enabled=true
 
@@ -104,7 +104,7 @@ https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Loon/Proxy/
 
 https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Loon/Proxy/Proxy_Domain.list, policy=手动选择, tag=代理-域名, enabled=true
 
-https://kelee.one/Tool/Loon/Rule/LAN_SPLITTER, policy=DIRECT, tag=LAN, enabled=true
+https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Loon/Lan/Lan.list, policy=DIRECT, tag=LAN, enabled=true
 
 https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Loon/ChinaMax/ChinaMax.list, policy=DIRECT, tag=ChinaMax, enabled=true
 
