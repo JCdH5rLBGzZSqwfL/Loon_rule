@@ -37,7 +37,7 @@ bypass-tun = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,1
 Amy = NameRegex, FilterKey = ".*"
 Amy过滤广告白名单 = NameRegex, FilterKey = "^(?!.*广告)"
 10000 = NameRegex, FilterKey = "^(?!.*?广告).*US"
-10010 = NameRegex, FilterKey = "^(?!.*VN)"
+10010 = NameRegex, FilterKey = "^(?!.*(VN|广告))"
 Amy广告白名单 = NameRegex, FilterKey = "^.*(广告)"
 
 [Proxy Group]
